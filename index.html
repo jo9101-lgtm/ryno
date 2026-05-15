@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SeaDoo Supercharger Rebuilding | Ryno Powersports — Canada's #1 Experts</title>
+<meta name="description" content="Canada's top SeaDoo supercharger rebuilding experts since 1998. Mail-in service available nationwide. Refresh Kit from $599.99, Full Kit from $1099.99. Ryno Powersports, Burlington Ontario.">
+<meta name="keywords" content="seadoo supercharger rebuilding, sea-doo supercharger rebuild, seadoo supercharger repair, sea-doo supercharger Canada, supercharger rebuild Burlington Ontario, seadoo supercharger service">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --dark: #111318;
+    --card: #161b24;
+    --border: #1e2635;
+    --accent: #0077ff;
+    --accent2: #00c2ff;
+    --text: #e8edf5;
+    --muted: #7a8599;
+    --white: #ffffff;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--black); color: var(--text); font-family: 'Barlow', sans-serif; overflow-x: hidden; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 48px;
+    background: rgba(10,10,10,0.9);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.08em; color: var(--white); text-decoration: none; }
+  .nav-logo span { color: var(--accent2); }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--accent2); }
+  .nav-cta { background: var(--accent); color: var(--white) !important; padding: 8px 20px; border-radius: 3px; }
+  .nav-cta:hover { background: var(--accent2) !important; color: var(--black) !important; }
+
+  /* PROMO */
+  .promo-bar {
+    margin-top: 64px;
+    background: #0a0a0a;
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+  }
+  .promo-inner {
+    display: flex; align-items: center; justify-content: center; gap: 20px;
+    padding: 14px 24px;
+    background: repeating-linear-gradient(90deg, #0a0f1a 0px, #0a0f1a 20px, #0d1420 20px, #0d1420 40px);
+    border-top: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
+  }
+  .promo-tag { background: var(--accent); color: white; font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 0.08em; padding: 4px 16px; border-radius: 3px; white-space: nowrap; box-shadow: 0 0 16px rgba(0,119,255,0.5); }
+  .promo-text { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); white-space: nowrap; }
+  .promo-text span { color: var(--accent2); }
+  .promo-dot { width: 5px; height: 5px; background: var(--accent2); border-radius: 50%; flex-shrink: 0; }
+
+  /* HERO */
+  .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 100px 48px 80px; }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 70% 60%, rgba(0,119,255,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 40% at 20% 80%, rgba(0,194,255,0.10) 0%, transparent 55%),
+      linear-gradient(160deg, #0a0a0a 0%, #0d1520 50%, #0a0f1a 100%);
+  }
+  .wave-container { position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; }
+  .wave-container svg { display: block; width: 100%; height: 80px; }
+  .hero-content { position: relative; z-index: 2; max-width: 750px; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent2); margin-bottom: 24px; }
+  .eyebrow::before { content: ''; display: block; width: 32px; height: 2px; background: var(--accent2); }
+  .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 8vw, 6.5rem); line-height: 0.95; letter-spacing: 0.02em; color: var(--white); margin-bottom: 28px; }
+  .hero h1 .accent { color: var(--accent2); display: block; }
+  .hero p { font-size: 1.1rem; font-weight: 300; line-height: 1.7; color: #9baec8; max-width: 560px; margin-bottom: 40px; }
+  .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn-primary { background: var(--accent); color: var(--white); padding: 15px 36px; font-family: 'Barlow Condensed', sans-serif; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; border-radius: 3px; transition: all 0.25s; border: 2px solid var(--accent); display: inline-block; white-space: nowrap; }
+  .btn-primary:hover { background: var(--accent2); border-color: var(--accent2); color: var(--black); }
+  .btn-outline { background: transparent; color: var(--text); padding: 15px 36px; font-family: 'Barlow Condensed', sans-serif; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; border-radius: 3px; transition: all 0.25s; border: 2px solid var(--border); }
+  .btn-outline:hover { border-color: var(--accent2); color: var(--accent2); }
+  .hero-stats { display: flex; gap: 48px; margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+  .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; color: var(--white); line-height: 1; }
+  .stat-num span { color: var(--accent2); }
+  .stat-label { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+
+  /* SECTIONS */
+  section { padding: 96px 48px; }
+  .section-label { display: inline-flex; align-items: center; gap: 10px; font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent2); margin-bottom: 18px; }
+  .section-label::before { content: ''; display: block; width: 24px; height: 2px; background: var(--accent2); }
+  .section-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.2rem, 5vw, 3.8rem); letter-spacing: 0.02em; color: var(--white); line-height: 1.05; margin-bottom: 16px; }
+  .section-sub { font-size: 1rem; font-weight: 300; line-height: 1.7; color: var(--muted); max-width: 560px; }
+
+  /* WARNING */
+  #warning { background: linear-gradient(135deg, #060d1a 0%, #0a1525 50%, #060d1a 100%); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center; }
+  .warning-badge { display: inline-block; background: rgba(255,160,0,0.12); border: 1px solid rgba(255,160,0,0.4); color: #ffa000; font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 6px 16px; border-radius: 3px; margin-bottom: 24px; }
+  .big-stat { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 8vw, 6rem); color: var(--accent2); line-height: 1; margin: 24px 0 8px; }
+
+  /* PRICING */
+  .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 48px; }
+  .price-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 32px 28px; transition: border-color 0.2s, transform 0.2s; }
+  .price-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+  .price-card.featured { border-color: var(--accent); background: linear-gradient(135deg, #0d1e3d, #0a1525); }
+  .price-card h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+  .price-card.featured h4 { color: var(--accent2); }
+  .price-amount { font-family: 'Bebas Neue', sans-serif; font-size: 3.2rem; color: var(--white); line-height: 1; }
+  .price-amount span { font-size: 1.4rem; color: var(--muted); }
+  .price-desc { font-size: 0.85rem; color: var(--muted); margin-top: 12px; line-height: 1.5; }
+
+  /* STEPS */
+  .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 48px; }
+  .step-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 32px 28px; text-align: center; transition: border-color 0.2s; }
+  .step-card:hover { border-color: var(--accent); }
+  .step-icon { font-size: 2.2rem; margin-bottom: 16px; display: block; }
+  .step-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: 0.05em; color: var(--white); margin-bottom: 10px; }
+  .step-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+
+  /* FORM */
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+  .form-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent2); }
+  .form-input { background: var(--dark); border: 1px solid var(--border); border-radius: 4px; padding: 12px 14px; font-family: 'Barlow', sans-serif; font-size: 0.95rem; color: var(--text); outline: none; transition: border-color 0.2s; width: 100%; }
+  .form-input:focus { border-color: var(--accent); }
+  .form-input::placeholder { color: var(--muted); }
+  .form-divider { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.1em; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 8px; margin: 24px 0 20px; }
+  .form-submit { width: 100%; background: var(--accent); color: var(--white); padding: 16px; font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; border: none; border-radius: 4px; cursor: pointer; transition: background 0.2s; margin-top: 8px; }
+  .form-submit:hover { background: var(--accent2); color: var(--black); }
+  .form-success { display: none; background: rgba(0,119,255,0.1); border: 1px solid var(--accent); border-radius: 4px; padding: 20px; text-align: center; color: var(--accent2); font-size: 0.95rem; line-height: 1.6; margin-top: 16px; }
+
+  /* REVIEWS */
+  .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
+  .review-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 32px 28px; }
+  .review-stars { color: #fbbf24; font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 16px; }
+  .review-text { font-size: 0.95rem; color: var(--text); line-height: 1.7; margin-bottom: 20px; }
+  .review-author { display: flex; align-items: center; gap: 12px; }
+  .review-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: white; flex-shrink: 0; }
+  .review-name { font-weight: 600; font-size: 0.9rem; color: var(--white); }
+  .review-model { font-size: 0.75rem; color: var(--muted); }
+
+  /* CONTACT */
+  .contact-item { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 28px; }
+  .contact-icon { width: 44px; height: 44px; background: rgba(0,119,255,0.1); border: 1px solid rgba(0,119,255,0.25); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+  .contact-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent2); margin-bottom: 4px; }
+  .contact-value { font-size: 0.95rem; color: var(--text); line-height: 1.5; }
+  .contact-value a { color: inherit; text-decoration: none; }
+  .contact-value a:hover { color: var(--accent2); }
+
+  /* FOOTER */
+  footer { background: #070707; border-top: 1px solid var(--border); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+  .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: 0.08em; color: var(--white); }
+  .footer-logo span { color: var(--accent2); }
+  .footer-text { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+  .footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
+  .footer-links a { font-size: 0.8rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--accent2); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.7s ease both; }
+  .eyebrow { animation-delay: 0.1s; }
+  .hero h1 { animation-delay: 0.25s; }
+  .hero p { animation-delay: 0.4s; }
+  .hero-btns { animation-delay: 0.5s; }
+  .hero-stats { animation-delay: 0.6s; }
+
+  @media (max-width: 900px) {
+    nav { padding: 16px 24px; }
+    .nav-links { display: none; }
+    section { padding: 72px 24px; }
+    .hero { padding: 100px 24px 72px; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; padding: 32px 24px; }
+    .promo-dot { display: none; }
+    .promo-text { white-space: normal; text-align: center; font-size: 0.85rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">RYNO<span>.</span>SUPERCHARGER</a>
+  <ul class="nav-links">
+    <li><a href="#why">Why Rebuild</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#mailin">Mail-In</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Get Started</a></li>
+  </ul>
+</nav>
+
+<!-- PROMO -->
+<div class="promo-bar">
+  <div class="promo-inner">
+    <div class="promo-tag">🎉 5% OFF</div>
+    <div class="promo-dot"></div>
+    <div class="promo-text">Mention this website & receive <span>5% off</span> any service</div>
+    <div class="promo-dot"></div>
+    <div class="promo-tag">🎉 5% OFF</div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Canada's #1 · Burlington, Ontario · Since 1998</div>
+    <h1>
+      SeaDoo Supercharger
+      <span class="accent">Rebuilding Experts</span>
+    </h1>
+    <p>Ryno Powersports has been rebuilding SeaDoo superchargers since 1998. Mail-in service available across Canada. Fast turnaround. Expert results.</p>
+    <div class="hero-btns">
+      <a href="#mailin" class="btn-primary">Ship Your Supercharger</a>
+      <a href="#pricing" class="btn-outline">View Pricing</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">1K<span>+</span></div>
+        <div class="stat-label">Superchargers Rebuilt</div>
+      </div>
+      <div>
+        <div class="stat-num">25<span>+</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div>
+        <div class="stat-num">100<span>%</span></div>
+        <div class="stat-label">SeaDoo Focused</div>
+      </div>
+    </div>
+  </div>
+  <div class="wave-container">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C150,80 350,0 600,40 C850,80 1050,0 1200,40 L1200,80 L0,80 Z" fill="#111318"/>
+    </svg>
+  </div>
+</section>
+
+<!-- WHY REBUILD -->
+<section id="why" style="background: var(--dark);">
+  <div class="section-label">Critical Maintenance</div>
+  <h2 class="section-title">Why You Need a Supercharger Rebuild</h2>
+  <p class="section-sub">Your SeaDoo supercharger is one of the most stressed components on your watercraft. Ignoring it is a costly mistake.</p>
+  <div class="steps-grid" style="margin-top: 48px;">
+    <div class="step-card">
+      <span class="step-icon">⚠️</span>
+      <h3>Ceramic Washers</h3>
+      <p>Older SeaDoos came with ceramic washers that disintegrate and destroy your engine. If you still have them — rebuild immediately.</p>
+    </div>
+    <div class="step-card" style="border-color: var(--accent);">
+      <span class="step-icon">⏱️</span>
+      <h3>100 Hour Rule</h3>
+      <p>SeaDoo recommends supercharger service every 100 hours. Don't wait for failure — a rebuild is far cheaper than a new engine.</p>
+    </div>
+    <div class="step-card">
+      <span class="step-icon">💨</span>
+      <h3>44,000 RPM</h3>
+      <p>Your supercharger spins at over 44,000 RPM. At those speeds, worn bearings and seals fail fast and catastrophically.</p>
+    </div>
+    <div class="step-card">
+      <span class="step-icon">💰</span>
+      <h3>Protect Your Investment</h3>
+      <p>A supercharger rebuild costs a fraction of engine replacement. Don't let a $600 service turn into a $6,000 repair.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WARNING CALLOUT -->
+<section id="warning">
+  <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+    <div class="warning-badge">⚠️ Don't Wait Until It Fails</div>
+    <div class="section-label" style="justify-content: center;">Supercharger Service</div>
+    <h2 class="section-title">Canada's #1 SeaDoo Supercharger Rebuilding Shop</h2>
+    <div class="big-stat">44,000 RPM</div>
+    <p class="section-sub" style="margin: 16px auto 32px; text-align: center;">We've rebuilt over 1,000 SeaDoo superchargers. People ship to us from across Canada because they trust our expertise. No generalists — just specialists.</p>
+    <a href="#mailin" class="btn-primary">Ship Your Supercharger to Us</a>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="background: var(--dark);">
+  <div class="section-label">Transparent Pricing</div>
+  <h2 class="section-title">Supercharger Rebuild Packages</h2>
+  <p class="section-sub">No surprises. No dealership markup. Just expert work at fair prices.</p>
+  <div class="price-grid">
+    <div class="price-card">
+      <h4>Refresh Kit</h4>
+      <div class="price-amount"><span>from </span>$599<span>.99</span></div>
+      <div class="price-desc">Bearings and seals replacement. Ideal for routine maintenance before failure occurs.</div>
+    </div>
+    <div class="price-card featured">
+      <h4>⭐ Full Kit — Best Value</h4>
+      <div class="price-amount"><span>from </span>$1,099<span>.99</span></div>
+      <div class="price-desc">Complete rebuild with all components replaced. Full peace of mind, maximum performance.</div>
+    </div>
+    <div class="price-card">
+      <h4>Removal & Installation</h4>
+      <div class="price-amount"><span>from </span>$249<span>.99</span></div>
+      <div class="price-desc">We remove and reinstall your supercharger. Available for local Burlington, Ontario customers.</div>
+    </div>
+  </div>
+  <p style="font-size: 0.85rem; color: var(--muted); margin-top: 32px;">★ All service by appointment. Call or email to book.</p>
+</section>
+
+<!-- MAIL-IN -->
+<section id="mailin" style="background: var(--black);">
+  <div class="section-label">Canada-Wide Service</div>
+  <h2 class="section-title">Mail-In Supercharger Rebuild</h2>
+  <p class="section-sub">Not local to Burlington? No problem. Remove your supercharger and ship it to us — we rebuild it and send it back ready to install.</p>
+
+  <div class="steps-grid">
+    <div class="step-card">
+      <span class="step-icon">🔩</span>
+      <h3>Step 1 — Remove</h3>
+      <p>Remove the supercharger from your SeaDoo. Email us first and we'll walk you through the process.</p>
+    </div>
+    <div class="step-card" style="border-color: var(--accent);">
+      <span class="step-icon">📦</span>
+      <h3>Step 2 — Ship</h3>
+      <p>Pack it securely and ship to our Burlington, Ontario location via Canada Post Xpresspost or UPS with tracking.</p>
+    </div>
+    <div class="step-card">
+      <span class="step-icon">⚙️</span>
+      <h3>Step 3 — We Rebuild</h3>
+      <p>We fully rebuild your supercharger with upgraded components. Fast turnaround, expert craftsmanship.</p>
+    </div>
+    <div class="step-card">
+      <span class="step-icon">🚚</span>
+      <h3>Step 4 — Shipped Back</h3>
+      <p>We ship your rebuilt supercharger back to you ready to install. Get back on the water fast.</p>
+    </div>
+  </div>
+
+  <!-- Removal Guide -->
+  <div style="background: rgba(0,119,255,0.08); border: 1px solid rgba(0,119,255,0.3); border-radius: 6px; padding: 18px 22px; margin-top: 40px; max-width: 700px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+    <div>
+      <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent2); margin-bottom: 4px;">Step-By-Step Guide</div>
+      <div style="font-size: 0.95rem; color: var(--text); font-weight: 500;">Not sure how to remove your supercharger?</div>
+      <div style="font-size: 0.85rem; color: var(--muted); margin-top: 2px;">Download our Sea-Doo Supercharger Removal Guide.</div>
+    </div>
+    <a href="https://www.rynopowersports.com/uploads/1/2/5/2/12526797/seadoo_supercharger_removal_ryno_powersports.pdf" target="_blank" class="btn-primary" style="font-size: 0.8rem; padding: 12px 22px;">📄 Download Removal Guide</a>
+  </div>
+
+  <!-- Rebuild Request Form -->
+  <div style="margin-top: 56px; max-width: 700px;">
+    <div class="section-label">Get Started</div>
+    <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--white); letter-spacing: 0.03em; margin-bottom: 8px;">Supercharger Rebuild Request Form</h3>
+    <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 28px; line-height: 1.6;">Fill out the form below and we'll be in touch within 1 business day to confirm your rebuild and provide shipping instructions.</p>
+
+    <div style="background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 36px 32px;">
+      <div class="form-divider">Sea-Doo Information</div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Make</label><input class="form-input" type="text" id="f-make" placeholder="Sea-Doo"></div>
+        <div class="form-group"><label class="form-label">Model</label><input class="form-input" type="text" id="f-model" placeholder="e.g. RXP-X 300"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Year</label><input class="form-input" type="number" id="f-year" placeholder="e.g. 2019"></div>
+        <div class="form-group"><label class="form-label">Current Hours</label><input class="form-input" type="number" id="f-hours" placeholder="e.g. 85"></div>
+      </div>
+      <div class="form-divider">Your Information</div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">First Name</label><input class="form-input" type="text" id="f-fname" placeholder="First name"></div>
+        <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" type="text" id="f-lname" placeholder="Last name"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Return Address</label><input class="form-input" type="text" id="f-address" placeholder="Street address, city, province, postal code"></div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" id="f-email" placeholder="your@email.com"></div>
+        <div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" id="f-phone" placeholder="e.g. 647-555-1234"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Additional Notes (optional)</label><textarea class="form-input" id="f-notes" rows="3" placeholder="Any known issues, symptoms, or questions..."></textarea></div>
+      <button class="form-submit" onclick="submitForm()">📦 Submit Rebuild Request</button>
+      <div class="form-success" id="form-success">✅ <strong>Request received!</strong><br>We'll be in touch within 1 business day to confirm your rebuild and provide shipping instructions.</div>
+    </div>
+  </div>
+
+  <!-- Ship To -->
+  <div style="margin-top: 40px; max-width: 700px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 36px 40px;">
+    <div style="font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: var(--white); letter-spacing: 0.05em; margin-bottom: 16px;">Ship To Us</div>
+    <div style="font-size: 0.95rem; color: var(--text); line-height: 1.9;"><strong style="color: var(--accent2);">Ryno Powersports</strong><br>1320 1 Side Road<br>Burlington, Ontario L7P 0R9<br>Canada</div>
+    <div style="font-size: 0.85rem; color: var(--muted); margin-top: 16px;">📧 Email us before shipping so we can confirm receipt and turnaround time.</div>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 20px;">
+      <a href="mailto:rynopowersports@gmail.com" class="btn-primary" style="font-size: 0.8rem; padding: 12px 24px;">✉️ Email Before Shipping</a>
+      <a href="tel:6472222246" class="btn-outline" style="font-size: 0.8rem; padding: 12px 24px;">📞 647-222-2246</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" style="background: var(--dark);">
+  <div class="section-label">Customer Reviews</div>
+  <h2 class="section-title">What Our Customers Say</h2>
+  <p class="section-sub">Trusted by SeaDoo owners across Canada for supercharger rebuilding.</p>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Ryno rebuilt my supercharger and it runs better than the day I bought it. Shipped from Alberta and had it back in less than a week. Unreal service."</p>
+      <div class="review-author"><div class="review-avatar">M</div><div><div class="review-name">Mike T.</div><div class="review-model">Sea-Doo RXP-X 300 · Alberta</div></div></div>
+    </div>
+    <div class="review-card" style="border-color: var(--accent);">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Used the mail-in service for my supercharger rebuild. Super easy process, great communication, and the price beat every other shop I called."</p>
+      <div class="review-author"><div class="review-avatar">C</div><div><div class="review-name">Chris W.</div><div class="review-model">Sea-Doo Wake Pro · Vancouver, BC</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Drove 3 hours from Ottawa — 100% worth it. Honest pricing, fast turnaround, and my ski has never felt stronger."</p>
+      <div class="review-author"><div class="review-avatar">D</div><div><div class="review-name">Derek S.</div><div class="review-model">Sea-Doo RXT-X 300 · Ottawa, ON</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Best in the business. My supercharger had ceramic washers still in it — Ryno caught it before it blew up my engine. Saved me thousands."</p>
+      <div class="review-author"><div class="review-avatar">P</div><div><div class="review-name">Paul K.</div><div class="review-model">Sea-Doo RXT 2007 · Hamilton, ON</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Fast, professional, and affordable. Shipped my supercharger on Monday and had it back rebuilt by Friday. Highly recommend to any SeaDoo owner."</p>
+      <div class="review-author"><div class="review-avatar">T</div><div><div class="review-name">Tyler M.</div><div class="review-model">Sea-Doo GTX 230 · Winnipeg, MB</div></div></div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I've been going to Ryno for years. Nobody knows SeaDoo superchargers better. The mail-in service is incredibly convenient for those of us outside Ontario."</p>
+      <div class="review-author"><div class="review-avatar">R</div><div><div class="review-name">Rob H.</div><div class="review-model">Sea-Doo RXP 255 · Calgary, AB</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background: var(--black);">
+  <div class="section-label">Contact Us</div>
+  <h2 class="section-title">Get In Touch</h2>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 48px;">
+    <div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div><div class="contact-label">Address</div><div class="contact-value">1320 1 Side Road<br>Burlington, Ontario L7P 0R9<br>Canada</div></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div><div class="contact-label">Phone</div><div class="contact-value"><a href="tel:6472222246">647-222-2246</a></div></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:rynopowersports@gmail.com">rynopowersports@gmail.com</a></div></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🌐</div>
+        <div><div class="contact-label">Main Website</div><div class="contact-value"><a href="https://www.rynopowersports.com" target="_blank">rynopowersports.com</a></div></div>
+      </div>
+    </div>
+    <div style="background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 40px;">
+      <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: var(--white); margin-bottom: 8px;">Ready to Book?</h3>
+      <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 24px; line-height: 1.6;">All service is by appointment only. Call or email us to get started.</p>
+      <a href="tel:6472222246" class="btn-primary" style="display: block; text-align: center;">📞 Call 647-222-2246</a>
+      <a href="mailto:rynopowersports@gmail.com" class="btn-outline" style="display: block; text-align: center; margin-top: 12px;">✉️ Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-logo">RYNO<span>.</span>SUPERCHARGER</div>
+    <div class="footer-text">Burlington, Ontario · SeaDoo Supercharger Rebuilding Experts Since 1998</div>
+  </div>
+  <div class="footer-links">
+    <a href="#pricing">Pricing</a>
+    <a href="#mailin">Mail-In</a>
+    <a href="#reviews">Reviews</a>
+    <a href="https://www.rynopowersports.com" target="_blank">Main Site</a>
+    <a href="tel:6472222246">647-222-2246</a>
+  </div>
+</footer>
+
+<script>
+  async function submitForm() {
+    const make    = document.getElementById('f-make').value.trim();
+    const model   = document.getElementById('f-model').value.trim();
+    const year    = document.getElementById('f-year').value.trim();
+    const hours   = document.getElementById('f-hours').value.trim();
+    const fname   = document.getElementById('f-fname').value.trim();
+    const lname   = document.getElementById('f-lname').value.trim();
+    const address = document.getElementById('f-address').value.trim();
+    const email   = document.getElementById('f-email').value.trim();
+    const phone   = document.getElementById('f-phone').value.trim();
+    const notes   = document.getElementById('f-notes').value.trim();
+
+    if (!make || !model || !year || !fname || !lname || !email || !phone || !address) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('_subject', `Supercharger Rebuild Request — ${year} ${make} ${model}`);
+    formData.append('_replyto', email);
+    formData.append('Sea-Doo Make', make);
+    formData.append('Sea-Doo Model', model);
+    formData.append('Year', year);
+    formData.append('Current Hours', hours || 'Not provided');
+    formData.append('Customer Name', `${fname} ${lname}`);
+    formData.append('Return Address', address);
+    formData.append('Email', email);
+    formData.append('Phone', phone);
+    formData.append('Notes', notes || 'None');
+
+    const btn = document.querySelector('.form-submit');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    try {
+      const response = await fetch('https://formspree.io/f/mjgldaed', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        document.getElementById('form-success').style.display = 'block';
+        btn.textContent = '✅ Request Sent!';
+        document.querySelectorAll('.form-input').forEach(el => el.value = '');
+      } else {
+        btn.textContent = '📦 Submit Rebuild Request';
+        btn.disabled = false;
+        alert('There was an issue. Please email rynopowersports@gmail.com directly.');
+      }
+    } catch(err) {
+      btn.textContent = '📦 Submit Rebuild Request';
+      btn.disabled = false;
+      alert('There was an issue. Please email rynopowersports@gmail.com directly.');
+    }
+  }
+</script>
+
+</body>
+</html>
